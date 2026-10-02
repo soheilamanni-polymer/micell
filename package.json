@@ -1,0 +1,11 @@
+{
+  "name": "micelle-learning-studio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A 20-slide English–Persian scientific lesson with research ideas and PDF export.",
+  "scripts": {
+    "start": "python3 -m http.server 3000 --bind 0.0.0.0",
+    "test": "node scripts/verify.mjs",
+    "export": "node scripts/export.mjs"
+  }
+}

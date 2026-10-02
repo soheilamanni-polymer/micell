@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173e35">
+  <meta name="description" content="A bilingual English–Persian lesson on micelle–hydrogel composites, with scientific diagrams, teaching notes, research ideas, and PDF export.">
+  <title>Micelle — A paper, made clear</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="persian.css">
+  <script defer src="slides.js"></script>
+  <script defer src="ideas.js"></script>
+  <script defer src="persian.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#slide-1" aria-label="Micelle, first slide"><span class="brand-mark">m<span>·</span></span><span>micelle<span class="brand-caption">A paper, made clear.</span></span></a>
+    <div class="breadcrumb">LEARNING STUDIO <span>/</span> BIOMATERIALS</div>
+    <div class="header-actions">
+      <div class="language-switch" aria-label="Language"><button data-language="fa" lang="fa">فارسی</button><button data-language="en" lang="en">EN</button></div>
+      <button class="plain-btn" id="notes-button" title="Teaching notes (N)" aria-expanded="false"><span aria-hidden="true">▤</span> <span>Notes</span></button>
+      <button class="plain-btn" id="ideas-button"><span aria-hidden="true">◇</span> <span>Research ideas</span></button>
+      <a class="solid-btn" href="exports/micelle-hydrogel-lesson.pdf" download><span aria-hidden="true">↓</span> <span>Export PDF</span></a>
+    </div>
+  </header>
+  <div class="workspace">
+    <aside class="sidebar" aria-label="Lesson outline">
+      <div class="outline-label">THE LESSON <span>20 SLIDES</span></div>
+      <nav id="outline"></nav>
+      <div class="sidebar-bottom"><span class="tiny-label">BASED ON THE REVIEW</span><p>Li et al. · 2025<br><em>Chinese Chemical Letters</em></p><a href="DOC-20260930-WA0013.pdf" target="_blank" rel="noopener">Read the original article <span>↗</span></a></div>
+    </aside>
+    <main class="main">
+      <div class="lesson-toolbar"><span id="current-chapter">01 / FOUNDATIONS</span><div><button id="overview-button" class="text-btn" title="All slides (O)">▦ <span>All slides</span></button><button class="icon-btn" id="fullscreen-button" title="Presentation mode (F)" aria-label="Enter fullscreen">⛶</button></div></div>
+      <div class="stage-wrap" id="stage-wrap"><div id="deck" class="deck" aria-label="Slide presentation"></div></div>
+      <div class="player-bar"><div class="slide-counter"><span id="slide-number">01</span><span class="counter-separator">/</span><span id="slide-total">20</span></div><div class="progress-track"><div id="progress-fill"></div></div><div class="navigation"><button id="prev-button" class="nav-btn" aria-label="Previous slide">←</button><button id="next-button" class="nav-btn next" aria-label="Next slide">→</button></div></div>
+      <div class="underbar"><span><span class="key">←</span> <span class="key">→</span> to navigate <span class="underbar-dot">·</span> <span class="key">N</span> for notes</span><span>20 ideas. One connected story.</span></div>
+      <section id="teaching-notes" class="teaching-notes" hidden aria-labelledby="notes-title"><div class="notes-heading"><span class="tiny-label">GO A LITTLE DEEPER</span><h2 id="notes-title">Teaching notes</h2><a class="notes-download" href="exports/teaching-notes.md" download>↓ Download all notes</a></div><div id="notes-content"></div></section>
+    </main>
+  </div>
+  <dialog id="overview-dialog" class="overview-dialog"><div class="dialog-heading"><div><span class="tiny-label">YOUR LEARNING MAP</span><h2>Explore the lesson</h2></div><button class="close-btn" data-close aria-label="Close slide overview">×</button></div><div id="overview-grid"></div></dialog>
+  <dialog id="ideas-dialog" class="ideas-dialog"><div class="dialog-heading"><div><span class="tiny-label">FROM REFERENCES TO RESEARCH</span><h2>Three research directions</h2></div><button class="close-btn" data-close aria-label="Close research ideas">×</button></div><p class="ideas-intro">These are proposed research questions inferred from the references. They are not reported results; originality needs a focused literature review.</p><div id="ideas-content"></div><a id="ideas-download" class="solid-btn" href="exports/research-ideas-en.md" download>↓ Download research brief</a></dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+</body>
+</html>

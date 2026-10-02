@@ -1,0 +1,213 @@
+/* Human-written Persian content; English scientific titles and DOIs remain
+   intact in the reference list. No remote translation or font service. */
+(() => {
+  const dictionary={
+    'A paper, made clear.':'مقاله را روشن و دقیق بیاموزید.',
+    'LEARNING STUDIO':'استودیوی یادگیری','BIOMATERIALS':'زیست‌مواد',
+    'Notes':'یادداشت‌ها','Research ideas':'ایده‌های پژوهشی','Export PDF':'دریافت PDF',
+    'THE LESSON':'مسیر یادگیری','20 SLIDES':'۲۰ اسلاید','BASED ON THE REVIEW':'بر پایهٔ مقالهٔ مروری',
+    'Read the original article':'مطالعهٔ مقالهٔ اصلی','All slides':'همهٔ اسلایدها',
+    'to navigate':'برای جابه‌جایی','for notes':'برای یادداشت‌ها','20 ideas. One connected story.':'۲۰ اسلاید؛ یک مسیر پیوسته.',
+    'GO A LITTLE DEEPER':'توضیح بیشتر','Teaching notes':'یادداشت‌های آموزشی','↓ Download all notes':'↓ دریافت همهٔ یادداشت‌ها',
+    'YOUR LEARNING MAP':'نقشهٔ یادگیری شما','Explore the lesson':'مرور اسلایدها',
+    'FROM REFERENCES TO RESEARCH':'از منابع تا پرسش پژوهشی','Three research directions':'سه مسیر پیشنهادی پژوهش',
+    'These are proposed research questions inferred from the references. They are not reported results; originality needs a focused literature review.':'این پرسش‌ها پیشنهادهایی برآمده از منابع هستند و نتیجهٔ گزارش‌شده محسوب نمی‌شوند. برای بررسی تازگی ایده، مرور متمرکز پیشینه لازم است.',
+    '↓ Download research brief':'↓ دریافت پیشنهادهای پژوهشی',
+    'Language':'زبان','Lesson outline':'فهرست درس','Slide presentation':'ارائهٔ اسلایدها',
+    'Teaching notes (N)':'یادداشت‌های آموزشی (N)','All slides (O)':'همهٔ اسلایدها (O)',
+    'Presentation mode (F)':'حالت ارائه (F)','Enter fullscreen':'نمایش تمام‌صفحه','Exit fullscreen':'خروج از تمام‌صفحه',
+    'Previous slide':'اسلاید قبلی','Next slide':'اسلاید بعدی','Close slide overview':'بستن مرور اسلایدها','Close research ideas':'بستن ایده‌های پژوهشی',
+    'Fullscreen is unavailable in this browser.':'این مرورگر از حالت تمام‌صفحه پشتیبانی نمی‌کند.',
+    'Fullscreen is unavailable here; browser zoom can enlarge the slides.':'تمام‌صفحه در این محیط در دسترس نیست؛ می‌توانید از بزرگ‌نمایی مرورگر استفاده کنید.',
+    'Correct.':'درست است.','Try again.':'دوباره تلاش کنید.',
+    'Evidence from the reference':'آنچه منبع گزارش می‌کند','Research question':'پرسش پژوهش','Hypothesis to test':'فرضیهٔ قابل‌آزمون','Study design':'طرح مقایسه','Measurements':'اندازه‌گیری‌ها','Decision criterion':'معیار تصمیم','Limitations and feasibility':'محدودیت و امکان اجرا',
+    'A GUIDED SCIENTIFIC LESSON':'درس علمی همراه با توضیح',
+    'Small carriers.':'حامل‌های کوچک.','Big possibilities.':'امکان‌های بزرگ.',
+    'Understanding polymeric':'شناخت کامپوزیت‌های','micelle–hydrogel composites':'میسل پلیمری–هیدروژل',
+    '20 slides':'۲۰ اسلاید','Diagrams & explanations':'نمودار و توضیح',
+    'Based on Hongyi Li et al.':'بر پایهٔ مقالهٔ Hongyi Li و همکاران',
+    'Conceptual schematic · not to scale':'طرح مفهومی؛ مقیاس واقعی ندارد',
+    'A nanoscale carrier. A tissue-scale scaffold.':'حامل نانومقیاس؛ داربست در مقیاس بافت.',
+    'The micelle':'میسل','A hydrophobic core carries drugs that disperse poorly in water.':'هستهٔ آب‌گریز، داروهای کم‌محلول در آب را حمل می‌کند.',
+    'The hydrogel':'هیدروژل','A water-rich network forms a local depot or scaffold.':'شبکهٔ غنی از آب، مخزن موضعی یا داربست ایجاد می‌کند.',
+    'The composite':'کامپوزیت','Couples cargo handling with retention and material function.':'حمل محموله را با نگهداشت و عملکرد ماده پیوند می‌دهد.',
+    'MICELLE':'میسل','Carries water-shy drugs':'حامل داروهای آب‌گریز','HYDROGEL':'هیدروژل','Retains a local reservoir':'نگهداشت مخزن موضعی',
+    'Two roles, combined in one material.':'دو نقش در یک ماده ترکیب می‌شوند.',
+    'An amphiphilic polymer has both water-loving and water-avoiding segments.':'پلیمر آمفی‌فیلیک، بخش‌های آب‌دوست و آب‌گریز دارد.',
+    'In water':'در آب','Hydrophobic segments associate inside; hydrated segments face out.':'بخش‌های آب‌گریز درون ساختار تجمع می‌کنند و بخش‌های آب‌دوست رو به بیرون قرار می‌گیرند.',
+    'With cargo':'با محموله','Compatible hydrophobic drugs partition into the core.':'داروی آب‌گریزِ سازگار وارد هسته می‌شود.',
+    'A stability constraint':'محدودیت پایداری','Dilution and changing conditions can disrupt the assembly.':'رقیق شدن و تغییر شرایط ممکن است تجمع را مختل کند.',
+    'Hydrophobic core':'هستهٔ آب‌گریز','Drug-rich compartment':'محفظهٔ غنی از دارو','Hydrophilic corona':'پوستهٔ آب‌دوست',
+    'Hydrated chains face water':'زنجیرهای آب‌دوست رو به آب','●  Hydrophobic drug':'● داروی آب‌گریز',
+    'A typical core–corona micelle · not all micelles are spherical.':'ساختار معمول هسته–پوسته؛ همهٔ میسل‌ها کروی نیستند.',
+    'Polymer chains':'زنجیرهای پلیمر','Physical or chemical junctions connect the chains.':'اتصالات فیزیکی یا شیمیایی زنجیرها را به هم وصل می‌کنند.',
+    'Water-filled spaces':'فضاهای پُر از آب','Transport depends on the network and the molecule moving through it.':'انتقال به شبکه و ویژگی مولکولِ عبوری وابسته است.',
+    'Mesh size, ξ':'اندازهٔ مش، ξ','A useful idea for the spacing between network chains.':'مفهومی برای فاصلهٔ میان زنجیرهای شبکه.',
+    'Chain':'زنجیر','Water occupies the spaces between connected chains.':'آب در فضاهای میان زنجیرهای متصل قرار می‌گیرد.',
+    'ξ = mesh size · schematic network, not a measured pore structure.':'ξ: اندازهٔ مش؛ این طرح، ساختار حفرهٔ اندازه‌گیری‌شده نیست.',
+    '01 · EMBED':'۱ · محبوس‌سازی','Guests in a network':'مهمان در شبکه','02 · CONNECT':'۲ · اتصال','Network junctions':'گره‌های شبکه','03 · SELF-ASSEMBLE':'۳ · خودآرایی','The gel-forming material':'مادهٔ سازندهٔ ژل',
+    'Classification follows the micelle’s structural role in the final material.':'طبقه‌بندی بر اساس نقش ساختاری میسل در مادهٔ نهایی است.',
+    'MICELLES AS GUESTS':'میسل‌ها به‌عنوان مهمان','Build':'ساخت','Gain':'مزیت','Tradeoff':'محدودیت',
+    'Load micelles, mix with precursors, then form the gel.':'میسل‌ها را بارگذاری کنید، با پیش‌ماده‌ها مخلوط کنید و ژل را بسازید.',
+    'Flexibility to incorporate different micelle functions.':'امکان ترکیب میسل‌ها با عملکردهای متفاوت.',
+    'Weak retention can allow micelles to escape.':'نگهداشت ضعیف می‌تواند به خروج میسل منجر شود.',
+    'Preformed micelles':'میسل‌های ازپیش‌ساخته','Gel precursors':'پیش‌ماده‌های ژل','Crosslink':'اتصال شبکه',
+    'Micelles are retained by the surrounding matrix.':'ماتریس پیرامونی میسل‌ها را نگه می‌دارد.',
+    'The surrounding polymer forms the network independently.':'پلیمر پیرامونی شبکه را مستقل از میسل تشکیل می‌دهد.',
+    'MICELLES AS CROSSLINKERS':'میسل‌ها به‌عنوان اتصال‌دهنده','Connect functionalized micelles to polymer chains.':'میسل‌های عامل‌دار به زنجیرهای پلیمر متصل می‌شوند.',
+    'Cargo carriers also shape the network’s mechanics.':'حامل دارو در خواص مکانیکی شبکه نیز نقش دارد.',
+    'Changing micelle content couples loading, mechanics, and release.':'مقدار میسل، بارگذاری، خواص مکانیکی و رهایش را به هم وابسته می‌کند.',
+    'Reactive groups':'گروه‌های واکنش‌پذیر','A carrier becomes part of the load-bearing network.':'حامل به بخشی از شبکهٔ تحمل‌کنندهٔ بار تبدیل می‌شود.',
+    'Micelle surface groups connect to the surrounding matrix.':'گروه‌های سطحی میسل به ماتریس پیرامونی متصل می‌شوند.',
+    'MICELLES AS BUILDING BLOCKS':'میسل‌ها به‌عنوان اجزای سازنده','A suitable amphiphilic polymer forms a connected micellar network.':'پلیمر آمفی‌فیلیک مناسب، شبکهٔ میسلی پیوسته تشکیل می‌دهد.',
+    'Trigger':'محرک','Temperature, concentration, salt, or solvent conditions.':'دما، غلظت، نمک یا شرایط حلال.',
+    'Formulation-specific gelation and possible mechanical weakness.':'ژل‌شدن وابسته به فرمولاسیون و احتمال ضعف مکانیکی.',
+    'Flowing solution':'محلول روان','Temperature':'دما','or salt':'یا نمک','Connected micellar gel':'ژل میسلی پیوسته',
+    'A sol–gel transition requires connectivity, not merely micelle formation.':'گذار محلول–ژل به پیوستگی شبکه نیاز دارد؛ تشکیل میسل کافی نیست.',
+    'Physical interactions':'برهم‌کنش‌های فیزیکی','Hydrogen bonding, electrostatic attraction, and host–guest binding.':'پیوند هیدروژنی، جاذبهٔ الکترواستاتیک و اتصال میزبان–مهمان.',
+    'Dynamic covalent bonds':'پیوندهای کووالانسی پویا','Examples include imine and hydrazone connections.':'برای نمونه، اتصالات ایمین و هیدرازون.',
+    'Macroscopic behavior':'رفتار در مقیاس ماده','Junction exchange can support self-healing and injectability.':'تبادل اتصالات می‌تواند به خودترمیمی و تزریق‌پذیری کمک کند.',
+    'Break ⇄ Re-form':'گسستن ⇄ تشکیل دوباره','Dynamic junction':'اتصال پویا',
+    'Example: reversible imine formation; rates depend on chemistry and conditions.':'تشکیل برگشت‌پذیر ایمین؛ سرعت به شیمی و شرایط وابسته است.',
+    'A network can resist a crack by redistributing stress and dissipating energy.':'بازتوزیع تنش و اتلاف انرژی می‌تواند رشد ترک را محدود کند.',
+    'Under deformation':'هنگام تغییرشکل','Reversible junctions can rearrange or temporarily separate.':'اتصالات برگشت‌پذیر جابه‌جا یا موقتاً جدا می‌شوند.',
+    'On recovery':'هنگام بازیابی','Mobile chains and junctions can reconnect.':'زنجیرها و اتصالات متحرک دوباره متصل می‌شوند.',
+    'Measure separately':'جداگانه اندازه بگیرید','Stiffness, stretchability, toughness, and fatigue resistance.':'سفتی، کشش‌پذیری، چقرمگی و مقاومت خستگی.',
+    'AT REST':'در حالت آرام','UNDER STRAIN':'تحت کرنش','Junction rearrangement can dissipate energy.':'بازآرایی اتصالات می‌تواند انرژی را تلف کند.',
+    'Proposed mechanism illustrated schematically; no experimental stress data.':'نمایش شماتیک سازوکار؛ شامل دادهٔ تجربی تنش نیست.',
+    'INTERACTIVE TEACHING MODEL':'مدل آموزشی تعاملی','Core → gel → surroundings':'هسته ← ژل ← محیط پیرامون',
+    'Change how quickly cargo leaves the micelle. The gel adds a second transport step.':'سرعت خروج محموله از میسل را تغییر دهید. ژل مرحلهٔ دوم انتقال را اضافه می‌کند.',
+    'Micelle release half-time':'نیم‌زمان رهایش از میسل','Faster':'سریع‌تر','Slower':'کندتر',
+    'Gel transport half-time = 2 relative units':'نیم‌زمان انتقال در ژل = ۲ واحد نسبی',
+    'Illustrative first-order model. Arbitrary relative time; no fitted or measured data.':'مدل نمایشی مرتبهٔ اول؛ زمان نسبی قراردادی و بدون دادهٔ اندازه‌گیری‌شده.',
+    'Comparison isolates a second transport step; actual gels may behave differently.':'این مقایسه اثر مرحلهٔ دوم را نشان می‌دهد؛ ژل واقعی ممکن است متفاوت رفتار کند.',
+    'Time (relative units)':'زمان (واحد نسبی)','Cumulative external release (%)':'رهایش تجمعی به محیط (%)','Micelle alone':'میسل تنها','Micelle + gel':'میسل + ژل',
+    'pH changes':'تغییر pH','Can alter ionization or the stability of chosen dynamic bonds.':'می‌تواند یونش یا پایداری پیوندهای پویای انتخاب‌شده را تغییر دهد.',
+    'Redox / ROS':'اکسایش–کاهش / ROS','Can act on specially designed sensitive groups.':'بر گروه‌های حساسِ طراحی‌شده اثر می‌گذارد.',
+    'Temperature / force':'دما / نیرو','Can change assembly, network state, or micelle structure.':'می‌تواند تجمع، وضعیت شبکه یا ساختار میسل را تغییر دهد.',
+    'Stimulus':'محرک','pH · ROS · heat':'pH · ROS · گرما','Material':'ماده','Bonds / core':'پیوندها / هسته','change':'تغییر','Release changes':'تغییر رهایش',
+    'The response must be engineered into the polymer.':'پاسخ‌گویی باید در طراحی پلیمر پیش‌بینی شود.',
+    'Stimulus → material change → altered transport or release.':'محرک ← تغییر ماده ← تغییر انتقال یا رهایش.',
+    'PRECLINICAL EXAMPLE':'نمونهٔ پیش‌بالینی','Two compartments':'دو محفظه','Hydrophilic gemcitabine (GEM) in the gel; hydrophobic d-1MT in micelle cores.':'جمسیتابین آب‌دوست (GEM) در ژل؛ d-1MT آب‌گریز در هستهٔ میسل.',
+    'One local depot':'یک مخزن موضعی','Micelles participate in thiol–ene network formation.':'میسل‌ها در تشکیل شبکه با واکنش تیول–اِن مشارکت می‌کنند.',
+    'Design purpose':'هدف طراحی','Sequential chemotherapy and immune modulation.':'شیمی‌درمانی و تنظیم ایمنی به‌صورت متوالی.',
+    'GEM in aqueous gel':'GEM در ژل آبی','d-1MT in micelle cores':'d-1MT در هستهٔ میسل',
+    'Qin et al. · breast-tumor model; schematic cargo allocation.':'Qin و همکاران؛ مدل تومور پستان و طرح توزیع محموله.',
+    'Bone':'استخوان','Combine a scaffold with sustained osteogenic cues. The review describes simvastatin-loaded micelle junctions.':'داربست با سیگنال‌های پایدار استخوان‌سازی ترکیب می‌شود. مقاله، اتصالات میسلی حامل سیمواستاتین را معرفی می‌کند.',
+    'Nerve':'عصب','Prioritize suitable softness, transport, and guidance. A conductive micellar gel delivered DHF in a nerve conduit.':'نرمی مناسب، انتقال و هدایت اهمیت دارند. ژل میسلی رسانا، DHF را در مجرای عصب حمل می‌کند.',
+    'CELL / ANIMAL RESEARCH':'پژوهش سلولی / حیوانی','BONE':'استخوان','NERVE':'عصب','Support + osteogenic cues':'پشتیبانی + سیگنال استخوان‌سازی','Softness + guidance + cargo':'نرمی + هدایت + محموله',
+    'DHF = 7,8-dihydroxyflavone · diagrams do not imply native tissue replacement.':'DHF: دی‌هیدروکسی‌فلاون؛ طرح‌ها به‌معنی جایگزینی بافت طبیعی نیستند.',
+    'FEMI · PRECLINICAL EXAMPLE':'FEMI · نمونهٔ پیش‌بالینی','Micelles':'میسل‌ها','Insulin-loaded aldehyde F127 micelles take part in network formation.':'میسل‌های آلدهیدی F127 حامل انسولین در ساخت شبکه مشارکت دارند.',
+    'Nanosheets':'نانوورقه‌ها','Polylysine-coated MnO₂ adds antibacterial and oxidative-environment functions.':'MnO₂ پوشیده از پلی‌لیزین، عملکرد ضدباکتری و تنظیم محیط اکسایشی اضافه می‌کند.',
+    'Network':'شبکه','Schiff-base connections integrate the components.':'اتصالات باز شیف، اجزا را یکپارچه می‌کنند.',
+    'Read with the':'همراه با','2025 image correction ↗':'اصلاحیهٔ تصاویر سال ۲۰۲۵ ↗',
+    'Figure 7, supplied Li et al. review; reproduced there from Wang et al., © 2020 ACS. Cropped from page 6.':'شکل ۷ مقالهٔ Li؛ بازنشر از Wang و همکاران، © ۲۰۲۰ ACS. برش از صفحهٔ ۶.',
+    'Design question':'پرسش طراحی','Embed':'محبوس‌سازی','Connect':'اتصال','Self-assemble':'خودآرایی',
+    'Micelle’s role':'نقش میسل','Cargo-bearing guest':'مهمانِ حامل دارو','Network junction':'گرهٔ شبکه','Gel building block':'جزء سازندهٔ ژل',
+    'Design appeal':'مزیت طراحی','Modular formulation':'فرمولاسیون انعطاف‌پذیر','Integrated mechanics':'یکپارچگی خواص مکانیکی','and delivery':'و دارورسانی','Fewer distinct':'اجزای کمتر برای','matrix components':'ساخت ماتریس',
+    'Main constraint':'محدودیت اصلی','Carrier escape':'خروج حامل','Coupled formulation':'وابستگی متغیرهای','variables':'فرمولاسیون','Specific gelation':'شرایط ویژهٔ','conditions':'ژل‌شدن',
+    'What to verify':'چه چیزی سنجیده شود؟','Retention + distribution':'نگهداشت + توزیع','Network + cargo function':'شبکه + عملکرد محموله','Gel window + stability':'بازهٔ ژل‌شدن + پایداری',
+    'Qualitative design guide synthesized from the review; no universal ranking.':'راهنمای کیفی بر پایهٔ مقاله؛ بدون رتبه‌بندی همگانی.',
+    'Measure the mechanism':'سازوکار را بسنجید','Loading, carrier retention, mechanics, release, and degradation.':'بارگذاری، نگهداشت حامل، مکانیک، رهایش و تخریب.',
+    'Test the biology':'زیست‌شناسی را بیازمایید','Relevant controls, tissue compatibility, and useful effects.':'کنترل مناسب، سازگاری بافتی و اثر موردنظر.',
+    'Resolve translation':'مسیر کاربرد را روشن کنید','Biosafety, breakdown products, reproducibility, and manufacturing.':'زیست‌ایمنی، محصولات تخریب، تکرارپذیری و ساخت.',
+    'Material':'ماده','Cells':'سلول','Animals':'حیوان','Humans':'انسان','Mechanism':'سازوکار','Bioactivity':'فعالیت زیستی','In vivo effects':'اثر در بدن','Clinical benefit':'فایدهٔ بالینی',
+    'A promising mechanism is an early step.':'سازوکار امیدوارکننده، گام آغازین است.',
+    'Each stage answers a different question.':'هر مرحله به پرسش متفاوتی پاسخ می‌دهد.',
+    'The supplied review describes a developing research field.':'مقالهٔ مروری، حوزه‌ای در حال توسعه را توصیف می‌کند.',
+    'A micelle is present, but the matrix gels without it. Which route is this?':'میسل حضور دارد، اما ماتریس بدون آن هم ژل می‌شود. کدام مسیر است؟',
+    'A gel has a higher small-strain modulus. What is directly supported?':'مدول ژل در کرنش کوچک بیشتر است. چه نتیجه‌ای مستقیم به‌دست می‌آید؟',
+    'Greater stiffness':'سفتی بیشتر','Greater toughness':'چقرمگی بیشتر','Better fatigue resistance':'مقاومت خستگی بیشتر',
+    'A composite improves healing in an animal model. What follows?':'کامپوزیت در مدل حیوانی ترمیم را بهتر می‌کند. چه نتیجه‌ای می‌گیریم؟',
+    'Human benefit is established':'فایدهٔ انسانی ثابت شده','The mechanism is universal':'سازوکار همگانی است','Preclinical evidence is promising':'شواهد پیش‌بالینی امیدوارکننده است',
+    'Embed. The micelle is a guest in an independently formed network.':'محبوس‌سازی؛ میسل مهمان شبکه‌ای است که مستقل تشکیل می‌شود.',
+    'Greater stiffness. Fracture and cyclic-loading tests answer the other questions.':'سفتی بیشتر؛ برای نتایج دیگر، آزمون شکست و بارگذاری چرخه‌ای لازم است.',
+    'Promising preclinical evidence. Human benefit requires suitable clinical evidence.':'شواهد پیش‌بالینی امیدوارکننده؛ فایدهٔ انسانی به شواهد بالینی مناسب نیاز دارد.',
+    '01 / START HERE':'۱ / پیشنهاد برای شروع','02 / MECHANISM':'۲ / سازوکار','03 / ARCHITECTURE':'۳ / معماری',
+    'Dose and stiffness':'دوز و سفتی','Give structural micelles and guest carriers separate roles.':'نقش میسل سازندهٔ شبکه را از حامل مهمان جدا کنید.',
+    'Test':'آزمون','Vary loaded/blank carrier ratio at fixed total polymer.':'نسبت حامل پُر به خالی را در مقدار پلیمر ثابت تغییر دهید.',
+    'Response or damage?':'پاسخ‌گویی یا آسیب؟','Distinguish force-driven release from carrier escape.':'رهایش ناشی از نیرو را از خروج حامل تفکیک کنید.',
+    'Track drug, carrier loss, and recovery under cyclic load.':'دارو، خروج حامل و بازیابی شبکه را در بار چرخه‌ای بسنجید.',
+    'Channels for nerves':'کانال برای عصب','Balance directional transport with local cargo retention.':'انتقال جهت‌دار را با نگهداشت موضعی محموله متعادل کنید.',
+    'Compare aligned channels, random channels, and bulk gel.':'کانال هم‌راستا، کانال تصادفی و ژل توده‌ای را مقایسه کنید.',
+    'Proposed extensions, not reported results. Open “Research ideas” for hypotheses, controls, measurements, and references.':'این‌ها پیشنهاد توسعهٔ پژوهش‌اند؛ فرضیه، کنترل، آزمون و منبع در بخش «ایده‌های پژوهشی» آمده است.',
+    'THREE THINGS TO REMEMBER':'سه نکتهٔ ماندگار','Structure shapes':'ساختار، تعیین‌کنندهٔ','function.':'عملکرد است.',
+    '01 · Pair a drug-compatible core with a hydrated scaffold.':'۱ · هستهٔ سازگار با دارو را با داربست آبدار ترکیب کنید.',
+    '02 · Choose how micelles participate in the network.':'۲ · نقش میسل در شبکه را انتخاب کنید.',
+    '03 · Test the mechanism and qualify the evidence.':'۳ · سازوکار را بیازمایید و سطح شواهد را مشخص کنید.',
+    '01 / THE MAIN ARTICLE':'۱ / مقالهٔ اصلی','02 / SELF-ASSEMBLY':'۲ / خودآرایی','03 / LOCAL COMBINATION DELIVERY':'۳ / دارورسانی ترکیبی موضعی','04 / NERVE REPAIR':'۴ / ترمیم عصب','05 / WOUND EXAMPLE + CORRECTION':'۵ / نمونهٔ زخم و اصلاحیه','06 / MECHANICAL RELEASE':'۶ / رهایش مکانیکی',
+    '2025 correction · DOI: 10.1021/acs.nanolett.5c03683 ↗':'اصلاحیهٔ ۲۰۲۵ · DOI: 10.1021/acs.nanolett.5c03683 ↗'
+  };
+  const metadata=[
+    ['حامل‌های کوچک؛ امکان‌های بزرگ','ایدهٔ اصلی','حامل نانومقیاس و شبکهٔ غنی از آب چگونه با هم کار می‌کنند؟'],
+    ['دو ماده، دو مسئلهٔ متفاوت','چرا ترکیب کنیم؟','میسل، محموله را حمل می‌کند؛ ژل، معماری پیرامونی را می‌سازد.'],
+    ['میسل: هسته و پوستهٔ آب‌دوست','درون میسل','خودآرایی در محیط آبی، محفظهٔ سازگار با دارو ایجاد می‌کند.'],
+    ['هیدروژل: شبکه‌ای پیوسته و آبدار','درون هیدروژل','شبکه باید هم از کاربرد پشتیبانی کند و هم انتقال مناسب را ممکن سازد.'],
+    ['انتخاب اصلی: نقش میسل در شبکه','سه مسیر طراحی','میسل می‌تواند مهمان، گرهٔ شبکه یا جزء سازندهٔ ژل باشد.'],
+    ['مسیر ۱: محبوس کردن میسل آماده','۱ · محبوس‌سازی','ترکیب ساده، به کنترل دقیق نگهداشت حامل نیاز دارد.'],
+    ['مسیر ۲: میسل به‌عنوان گرهٔ شبکه','۲ · اتصال','میسل می‌تواند دارو حمل کند و هم‌زمان شبکه را نگه دارد.'],
+    ['مسیر ۳: تشکیل ژل با خودِ میسل‌ها','۳ · خودآرایی','ماتریس جدا لازم نیست؛ پلیمر باید قابلیت ژل‌شدن داشته باشد.'],
+    ['اتصالات برگشت‌پذیر و خودترمیمی','برهم‌کنش‌های پویا','خودترمیمی به تشکیل دوبارهٔ اتصالات در زمان مناسب نیاز دارد.'],
+    ['چقرمگی: مدیریت انرژی و رشد ترک','مکانیک و چقرمگی','ژل سفت‌تر، الزاماً چقرمه‌تر یا مقاوم‌تر به خستگی نیست.'],
+    ['رهایش دارو: دو مرحلهٔ انتقال','کاوش رهایش','توزیع دارو، انتقال در ماتریس، تخریب و خروج میسل همگی اهمیت دارند.'],
+    ['محرک را به سازوکار وصل کنید','طراحی پاسخ‌گو به محرک','پاسخ‌گویی، ویژگی مسیر شیمیایی طراحی‌شده است؛ نه هر هیدروژل.'],
+    ['درمان موضعی تومور: دو محفظه','درمان موضعی تومور','طراحی محفظه‌ها می‌تواند زمان‌بندی دارورسانی ترکیبی را تنظیم کند.'],
+    ['ترمیم بافت: نیاز بافت را بشناسید','داربست استخوان و عصب','داربست باید متناسب با بافت باشد؛ یک فرمولاسیون برای همهٔ بافت‌ها کافی نیست.'],
+    ['ترمیم زخم: چند عملکرد در یک ماده','نمونهٔ ترمیم زخم','چندعملکردی بودن زمانی مفید است که نقش هر جزء تأیید شود.'],
+    ['انتخاب مسیر بر اساس مزیت و محدودیت','مقایسهٔ مسیرها','مسیر ساخت را با دارو، محل مصرف، مکانیک و روش ساخت هماهنگ کنید.'],
+    ['از پژوهش امیدوارکننده تا کاربرد','شواهد و پرسش‌های باز','عملکرد ماده و نتیجهٔ حیوانی، فایدهٔ بالینی انسانی را ثابت نمی‌کنند.'],
+    ['دانسته‌های خود را بیازمایید','سه پرسش کوتاه','ساختار، سازوکار و قوت شواهد را توضیح دهید.'],
+    ['از منابع، پرسش پژوهشی بسازید','ایده‌های پژوهشی','با پرسش قابل‌آزمون و کنترل‌های تفکیک‌کنندهٔ سازوکار شروع کنید.'],
+    ['شواهد را دنبال کنید؛ ایده را نگه دارید','منابع و نکته‌ها','مسیر طراحی، شیمی را به معماری، دارورسانی و کاربرد پیوند می‌دهد.']
+  ];
+  const notes=[
+    'این درس بر پایهٔ مقالهٔ مروری ارائه‌شده است و آزمایش جدیدی گزارش نمی‌کند. مفاهیم از اصول پلیمر و خودآرایی شروع می‌شوند. پرسش اصلی این است که نحوهٔ حضور میسل در هیدروژل چگونه مکانیک، نگهداشت محموله و عملکرد زیست‌پزشکی را تغییر می‌دهد. مقاله در سال ۲۰۲۴ برخط منتشر شد و در جلد سال ۲۰۲۵ قرار گرفت. طرح‌های تولیدشده آموزشی هستند و ساختار اندازه‌گیری‌شده را نشان نمی‌دهند.',
+    'هیدروژل‌ها آب زیادی دارند؛ این ویژگی برای محیط شبه‌بافت مناسب است، اما پخش یکنواخت داروی بسیار آب‌گریز را دشوار می‌کند. میسل آمفی‌فیلیک محفظهٔ سازگار با دارو می‌سازد. ژل، ساختار بزرگ‌مقیاس و نگهداشت نزدیک محل کاربرد را فراهم می‌کند. بهبود مکانیک یا زیست‌سازگاری برای همهٔ فرمولاسیون‌ها تضمین‌شده نیست و باید اندازه‌گیری شود.',
+    'آمفی‌فیلیک یعنی بخش‌های یک مولکول میل متفاوتی به آب دارند. در میسل معمول، بخش‌های آب‌گریز در هسته تجمع می‌کنند و بخش‌های آب‌دوست پوستهٔ آب‌پوشیده یا کرونا را می‌سازند. هسته حفرهٔ خالی نیست؛ محفظه‌ای غنی از پلیمر است. مقدار بارگذاری به سازگاری دارو–پلیمر و فرمولاسیون وابسته است. غلظت بحرانی میسل‌شدن (CMC) آستانه‌ای در شرایط مشخص است، اما به‌تنهایی پایداری همهٔ میسل‌های پلیمری را پیش‌بینی نمی‌کند. شکل و مقیاس طرح ساده‌سازی شده‌اند.',
+    'هیدروژل شبکهٔ سه‌بعدی پلیمر است که آب زیادی نگه می‌دارد. اتصالات شبکه، حل شدن سادهٔ زنجیرها را در بازهٔ زمانی موردنظر محدود می‌کنند. اندازهٔ مش، مفهوم مولکولی فاصلهٔ میان زنجیرهاست و نباید با حفره‌های بزرگِ نمونهٔ خشک‌شده در میکروسکوپ یکی گرفته شود. سفتی، تورم، تخریب و انتقال به شیمی و معماری شبکه وابسته‌اند. میسل ممکن است محبوس باشد، با زنجیرها برهم‌کنش کند یا خودِ گرهٔ شبکه باشد.',
+    'مقاله سه مسیر کلی معرفی می‌کند: تشکیل ژل در سوسپانسیون میسل‌های آماده، مشارکت میسل به‌عنوان اتصال‌دهندهٔ شبکه و تشکیل ژل توسط خود سامانهٔ میسلی. در فرمولاسیون واقعی ممکن است چند نوع برهم‌کنش هم‌زمان وجود داشته باشد. برای تشخیص مسیر بپرسید: آیا ماتریس بدون حضور میسل هم شبکه تشکیل می‌دهد؟ اگر بله، نقش غالب میسل می‌تواند مهمانِ محبوس باشد.',
+    'در مسیر محبوس‌سازی، میسل آماده به محلول ژل‌ساز اضافه می‌شود و سپس شبکه با اتصال یا تغییر شرایط تشکیل می‌شود. مقاله همچنین جذب محلول میسل در ژلِ ازپیش‌خشک‌شده را توضیح می‌دهد. این روش طراحی حامل و ماتریس را جدا می‌کند، اما یکنواختی و نگهداشت دائمی را تضمین نمی‌کند. اندازهٔ مش، تورم، اندازهٔ میسل و برهم‌کنش با ماتریس در خروج حامل نقش دارند؛ نگهداشت باید مستقیماً بررسی شود.',
+    'در این مسیر، میسل از نظر ساختاری در تشکیل شبکه مشارکت دارد. گروه‌های واکنش‌پذیر سطحی یا برهم‌کنش‌های برگشت‌پذیر، میسل را به گره‌ای برای اتصال چند زنجیر تبدیل می‌کنند. مقاله نمونه‌هایی از F127 اصلاح‌شده با آلدهید و ساخت اتصال‌دهنده‌های میسلی با خودآرایی القاشده با پلیمریزاسیون را معرفی می‌کند. مقدار، اندازه و شیمی میسل می‌توانند هم‌زمان چگالی شبکه، اتلاف انرژی و رهایش را تغییر دهند. مقدار بیشتر میسل همیشه بهتر نیست.',
+    'میسل‌شدن و ژل‌شدن دو گذار متفاوت‌اند. میسل‌های جدا می‌توانند در محلول روان وجود داشته باشند؛ ژل به ساختار پیوسته یا ازدحام کافی نیاز دارد. بعضی کوپلیمرها با دما و بعضی سامانه‌ها با نمک یا شرایط حلال ژل می‌شوند. Lang و همکاران نشان دادند در روش تزریق سریع محلول پلیمر به آب، غلظت اولیه می‌تواند به میسل، میکروژل یا هیدروژل منجر شود. این یافته برای همان فرایند حلالی است و قانون عمومی ژل‌شدن حرارتی نیست. محرک باید با پایداری محموله سازگار باشد.',
+    'معادله، واکنش برگشت‌پذیر آلدهید و آمین اولیه برای تشکیل ایمین و آب را نشان می‌دهد؛ دستور ساخت نیست. مقاله پیوندهای کووالانسی پویا و برهم‌کنش‌های فیزیکی برگشت‌پذیر را بررسی می‌کند. نوع پیوند به‌تنهایی خودترمیمی سریع را تضمین نمی‌کند؛ سرعت واکنش، تحرک زنجیر، تماس سطوح آسیب‌دیده و محیط اهمیت دارند. برش‌نازک‌شوندگی، تزریق‌پذیری و خودترمیمی ویژگی‌های جداگانه‌اند و باید جدا سنجیده شوند.',
+    'سفتی، مقاومت در برابر تغییرشکل کوچک است؛ چقرمگی، انرژی لازم برای شکست را توصیف می‌کند؛ مقاومت خستگی به آسیب در بارگذاری تکراری مربوط است. مقاله نمونه‌هایی را برجسته می‌کند که حرکت گره‌ها و لغزش زنجیر، انرژی رشد ترک را تلف می‌کند. افزایش اتصال دائمی ممکن است ژل را سفت‌تر کند و کشش‌پذیری را کاهش دهد. ادعای مکانیکی قوی به آزمون تنش–کرنش، شکست، بازیابی و بارگذاری چرخه‌ای متناسب نیاز دارد.',
+    'این مدل فرض می‌کند همهٔ دارو ابتدا در میسل است، با نرخ ثابت kₘ وارد ژل می‌شود و سپس با نرخ k𝗀 از ژل خارج می‌شود. انتقال یک‌طرفه، شرایط سینک، نبود داروی آزاد اولیه و نبود تخریب یا خروج حامل فرض شده‌اند. برای نرخ‌های متفاوت: F(t)=1−[k𝗀 exp(−kₘt)−kₘ exp(−k𝗀t)]/(k𝗀−kₘ). برای نرخ‌های برابر: F(t)=1−exp(−kt)(1+kt). نرخ برابر ln(2) تقسیم بر نیم‌زمان است. کنترل، نیم‌زمان میسل را تغییر می‌دهد و نیم‌زمان ژل ۲ واحد نسبی می‌ماند. این مدل آموزشی ساخته‌شده برای درس است و دادهٔ مقاله یا پیش‌بینی بالینی نیست. در سامانهٔ واقعی، رهایش جهشی، اتصال دارو، نفوذ، فرسایش و خروج میسل می‌توانند مهم باشند.',
+    'ROS به گونه‌های فعال اکسیژن گفته می‌شود. پاسخ‌گویی تنها زمانی رخ می‌دهد که گروه شیمیایی یا ساختار حساس به محرک در ماده وجود داشته باشد. ممکن است پیوند بشکند، هسته تغییر کند یا پیوستگی شبکه تغییر یابد. اثر می‌تواند رهایش را سریع‌تر یا کندتر کند و باید آزمایش شود. بپرسید: شدت محرک در محل هدف کافی است؟ در محل‌های دیگر هم وجود دارد؟ تفاوت با کنترلِ مشابهِ غیرپاسخ‌گو چیست؟',
+    'Qin و همکاران جمسیتابین را در بخش آبی ژل و مهارکنندهٔ آب‌گریز IDO، یعنی d-1MT، را در میسل‌های F127 قرار دادند. کندرویتین سولفات تیوله‌شده و F127 متاکریله‌شده با واکنش تیول–اِن شبکه ساختند. مطالعه در مدل موشی تومور 4T1 انجام شد. نکتهٔ طراحی این است که محفظه‌های متفاوت مسیرهای انتقال متفاوت ایجاد می‌کنند و می‌توانند رهایش متوالی بدهند. این نتیجه برای هر جفت دارو تعمیم‌پذیر نیست و اثربخشی انسانی را ثابت نمی‌کند.',
+    'نمونهٔ استخوان در مقاله، میسل‌های مالتودکسترین آلدهیدی حامل سیمواستاتین است که با پیوند باز شیف در شبکه تثبیت شده‌اند. نتیجهٔ استخوان‌سازی در سلول‌های MC3T3-E1 بررسی شده و به‌معنی جایگزینی استخوانِ تحمل‌کنندهٔ بار نیست. در مطالعهٔ Deng، کیتوسان اصلاح‌شده با پلی‌آنیلین و F127 آلدهیدی، ژل رسانا را در مجرای کیتوسانی تشکیل دادند. سامانهٔ حامل DHF در آسیب عصب سیاتیک موش صحرایی بررسی شد. انتقال مواد غذایی، تخریب سازگار و محیط مکانیکی نیز ضروری‌اند.',
+    'FEMI از میسل‌های آلدهیدی F127 حامل انسولین و نانوورقه‌های MnO₂ پوشیده از ε-پلی‌لیزین تشکیل می‌شود. میسل‌ها در اتصال باز شیف شبکه مشارکت دارند. مطالعه عملکرد ضدباکتری و تغییر محیط اکسایشی زخم را در مدل زخم دیابتی عفونی بررسی می‌کند. تصویر این اسلاید، طرح طراحی در مقالهٔ مروری است و تصویر نتیجهٔ درمان نیست. اصلاحیهٔ سپتامبر ۲۰۲۵، تصاویر تکراری یا با برچسب نادرست در شکل‌های 3e و 3f مطالعهٔ اصلی را جایگزین کرد؛ نویسندگان اعلام کردند تحلیل آماری و نتیجهٔ اصلی تغییر نکرده است. لینک اصلاحیه برای مطالعهٔ به‌روز آورده شده است. طرح واکنش داخل تصویر، معادلهٔ استوکیومتری موازنه‌شده نیست.',
+    'ابتدا دارو و کاربرد را مشخص کنید: حلالیت، زمان مواجههٔ هدف، روش تزریق یا قراردهی، بار مکانیکی و تخریب موردنیاز. محبوس‌سازی، توسعهٔ جداگانهٔ حامل و ماتریس را ساده‌تر می‌کند، اما نگهداشت باید تأیید شود. اتصال میسل به شبکه، یکپارچگی ایجاد می‌کند ولی تنظیم مستقل دوز و مکانیک را محدود می‌کند. خودآرایی می‌تواند تعداد اجزای ماتریس را کاهش دهد، اما به پلیمر مناسب و بازهٔ ژل‌شدن وابسته است. هیچ مسیر همیشه بهترین، ایمن‌ترین یا ساده‌ترین نیست.',
+    'مقاله در بخش نتیجه‌گیری، کاربرد بالینی این کامپوزیت‌ها را محدود و نیاز به بررسی تخریب، زیست‌ایمنی و عوارض را مطرح می‌کند. این درس همان ارزیابی مقاله را گزارش می‌کند و مرور جامع وضعیت بالینی یا مقررات سال ۲۰۲۶ نیست. حسگر، چاپ سه‌بعدی، الکترونیک انعطاف‌پذیر و واکسن در ژل، مسیرهای آیندهٔ مطرح‌شده‌اند. برای تفکیک نقش هر جزء از کنترل داروی آزاد، ژل خالی، میسل تنها و سامانهٔ غیرپاسخ‌گو استفاده کنید.',
+    'ابتدا بدون برگشتن به اسلایدهای قبل پاسخ دهید. سامانه را بر اساس نقش ساختاری میسل طبقه‌بندی کنید، نه فقط فهرست مواد. سفتی را از چقرمگی شکست و مقاومت خستگی جدا کنید. ادعای زیستی را به مدل آزمایشیِ پشتیبان آن محدود کنید. اگر می‌توانید فایدهٔ ترکیب، سه مسیر طراحی و یک محدودیت مکانیک یا رهایش را توضیح دهید، ایدهٔ اصلی مقاله را فهمیده‌اید. در PDF، توضیح پاسخ‌ها زیر پرسش‌ها دیده می‌شود.',
+    'این سه پیشنهاد از منابع استنتاج شده‌اند؛ نتیجهٔ گزارش‌شده یا ادعای اثبات‌شدهٔ تازگی نیستند. پیشنهاد نخست برای شروع پژوهش مواد، تفکیک نقش میسل ساختاری از میسل مهمان حامل دارو و آزمون امکان تنظیم دوز با مکانیک تقریباً ثابت است. پیشنهاد دوم، تشخیص تغییرشکل برگشت‌پذیر از خروج حامل یا آسیب شبکه در رهایش مکانیکی است. پیشنهاد سوم به امکانات زیستی بیشتری نیاز دارد و کانال‌های هم‌راستا را با ژل توده‌ای و کانال تصادفی برای انتقال و هدایت عصبی مقایسه می‌کند. فرضیه، کنترل، اندازه‌گیری و محدودیت هر ایده در بخش «ایده‌های پژوهشی» آمده است. پیش از انتخاب موضوع، مرور متمرکز پیشینه و بررسی تازگی لازم است.',
+    'PDF ارائه‌شده منبع اصلی درس است. منابع پژوهشی اصلی برای تأیید نمونه‌ها و مدل‌های آزمایشی بررسی شدند: Lang شمارهٔ ۴۹، Qin شمارهٔ ۱۴، Deng شمارهٔ ۷۵، Wang شمارهٔ ۸۵ و Fang شمارهٔ ۳۸ در مقالهٔ مروری هستند. اصلاحیهٔ مطالعهٔ زخم پس از مقالهٔ مروری منتشر شده و به‌عنوان به‌روزرسانی پیوند داده شده است. نمونهٔ استخوان از مرجع ۶۹، Yan و همکاران، Biomacromolecules 19 (2018)، صفحات 4554–4564 است. جز شکل ۷ برش‌خورده و منتسب به مقاله، نمودارها طرح مفهومی تولیدشده‌اند. نمودار رهایش دادهٔ تجربی ندارد. پیشنهادهای اسلاید ۱۹، پرسش‌های پژوهشی استنتاجی‌اند. منابع در ۲ اکتبر ۲۰۲۶ بررسی شدند.'
+  ];
+  const chapters=['مبانی','مسیرهای طراحی','رفتار ماده','کاربردهای زیست‌پزشکی','تفکر پژوهشگرانه'];
+  let lang='fa';
+  const requested=new URLSearchParams(location.search).get('lang');
+  try{lang=requested==='en'||requested==='fa'?requested:(localStorage.getItem('micelle-language')||'fa');}catch{if(requested==='en')lang='en';}
+  if(!['en','fa'].includes(lang))lang='fa';
+  const t=text=>lang==='fa'?(dictionary[text]||text):text;
+  function translateHTML(html,label){
+    const template=document.createElement('template');template.innerHTML=html;
+    const walker=document.createTreeWalker(template.content,NodeFilter.SHOW_TEXT);
+    let node;while(node=walker.nextNode()){const trimmed=node.nodeValue.trim();if(dictionary[trimmed])node.nodeValue=node.nodeValue.replace(trimmed,dictionary[trimmed]);}
+    template.content.querySelectorAll('svg').forEach(node=>{node.setAttribute('dir','ltr');const title=node.querySelector('title');if(title)title.textContent='طرح مفهومی: '+label;node.setAttribute('aria-label',title?.textContent||'طرح مفهومی علمی');});
+    template.content.querySelectorAll('.source-list a').forEach(node=>{node.setAttribute('dir','ltr');if(!node.classList.contains('correction-source'))node.setAttribute('lang','en');});
+    template.content.querySelectorAll('.article-figure img').forEach(node=>node.setAttribute('alt','شکل ۷ مقالهٔ مروری: ساخت هیدروژل FEMI از میسل حامل انسولین و نانوورقهٔ دی‌اکسید منگنز؛ طرح مراحل ترمیم زخم.'));
+    return template.innerHTML;
+  }
+  function getSlides(){return lang==='en'?window.MICELLE.slides:window.MICELLE.slides.map((s,i)=>({...s,title:metadata[i][0],nav:metadata[i][1],takeaway:metadata[i][2],notes:notes[i],body:translateHTML(s.body,metadata[i][0])}));}
+  function translateChrome(){
+    document.documentElement.lang=lang;document.documentElement.dir=lang==='fa'?'rtl':'ltr';
+    document.querySelectorAll('[data-language]').forEach(b=>{b.classList.toggle('selected',b.dataset.language===lang);b.setAttribute('aria-pressed',String(b.dataset.language===lang));});
+    if(lang!=='fa')return;
+    const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);let node;
+    while(node=walker.nextNode()){if(node.parentElement.closest('.language-switch,.brand-mark,#deck'))continue;const key=node.nodeValue.trim();if(dictionary[key])node.nodeValue=node.nodeValue.replace(key,dictionary[key]);}
+    document.querySelectorAll('[aria-label],[title]').forEach(el=>{for(const attr of ['aria-label','title']){const value=el.getAttribute(attr);if(dictionary[value])el.setAttribute(attr,dictionary[value]);}});
+    document.querySelector('.brand').setAttribute('dir','ltr');
+    document.querySelector('.sidebar-bottom p').setAttribute('dir','ltr');
+  }
+  function sourceLabel(key){const s=window.MICELLE.source[key];if(lang==='en')return s.short;const names={review:'Li و همکاران، ۲۰۲۵ · مقالهٔ مروری',lang:'Lang، ۲۰۱۹ · مرجع ۴۹',qin:'Qin، ۲۰۲۱ · مرجع ۱۴',deng:'Deng، ۲۰۲۲ · مرجع ۷۵',wang:'Wang، ۲۰۲۰ · مرجع ۸۵',correction:'Wang، ۲۰۲۵ · اصلاحیه',fang:'Fang، ۲۰۲۰ · مرجع ۳۸'};return names[key]||s.short;}
+  window.MICELLE_I18N={lang,t,getSlides,translateChrome,sourceLabel,chapters:lang==='fa'?chapters:window.MICELLE.chapters,number:n=>lang==='fa'?String(n).replace(/\d/g,d=>'۰۱۲۳۴۵۶۷۸۹'[d]):String(n)};
+})();
